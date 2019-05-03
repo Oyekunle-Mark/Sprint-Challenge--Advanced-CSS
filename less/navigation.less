@@ -7,6 +7,10 @@ nav {
     margin: 0 auto;
     text-align: center;
 
+    @media (max-width: @mobileBreakpoint) {
+      max-width: 300px;
+    }
+
     ul {
       .flex(0, space-between, 0);
       margin-top: 1rem;
