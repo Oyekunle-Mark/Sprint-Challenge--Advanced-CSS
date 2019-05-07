@@ -1,1 +1,24 @@
-// Navigation code here
+nav {
+  background: @nav-bg;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+
+  .container-header {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+
+    @media @mobile {
+      max-width: 300px;
+    }
+
+    ul {
+      .flex(0, space-between, 0);
+      margin-top: 1rem;
+    }
+  }
+}
